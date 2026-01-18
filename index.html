@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sayyohlik Agentligi</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sayyohlik</h1>
+        <p>Premium Travel Agency</p>
+    </header>
+
+    <div class="container">
+        <!-- About Us Section -->
+        <h2 class="section-title">✨ About Us / О нас</h2>
+        <div class="about-us">
+            <p>
+                🇺🇿 Biz "Sayyohlik Agentligi" - O'zbekiston bo'ylab va chet elga unutilmas sayohatlarni tashkil etamiz.
+                24/7 qo'llab-quvvatlash, eng yaxshi mehmonxonalar va qulay aviachiptalar.
+            </p>
+            <br>
+            <p>
+                🇷🇺 Мы - ваше надежное туристическое агентство. Организуем незабываемые туры по Узбекистану и миру.
+                Круглосуточная поддержка, лучшие отели и удобные перелеты.
+            </p>
+        </div>
+
+        <!-- Popular Tours Section -->
+        <h2 class="section-title">🔥 Popular Tours</h2>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/600x400/?samarkand" alt="Samarkand">
+            <div class="card-content">
+                <div class="card-title">Magic Samarkand</div>
+                <div class="card-desc">Погрузитесь в историю древнего города. Регистан, Гур-Эмир и восточный базар.</div>
+                <div class="card-price">from $50</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/600x400/?mountains,snow" alt="Chimgan">
+            <div class="card-content">
+                <div class="card-title">Chimgan Mountains</div>
+                <div class="card-desc">Отдых на природе, лыжный курорт и свежий горный воздух.</div>
+                <div class="card-price">from $30</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/600x400/?dubai" alt="Dubai">
+            <div class="card-content">
+                <div class="card-title">Luxury Dubai</div>
+                <div class="card-desc">Небоскребы, шопинг и пляжи. Тур "все включено".</div>
+                <div class="card-price">from $500</div>
+            </div>
+        </div>
+
+        <a href="#" onclick="Telegram.WebApp.close()" class="contact-btn">Close App / Закрыть</a>
+    </div>
+
+    <script>
+        // Init Telegram Web App
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
+    </script>
+</body>
+</html>
